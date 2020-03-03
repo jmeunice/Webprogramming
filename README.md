@@ -1,2 +1,2 @@
 # Webprogramming
-The is my first project.
+This will soon be a full project!
