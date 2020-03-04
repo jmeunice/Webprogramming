@@ -1,14 +1,43 @@
 <html>
 
   <head>
-    <title> Lesson 4 example </title>
+      <title> Lesson 4 example </title>
 
   </head>
 
 <body>
-  <h1> Header 1 </h1>
+  <div class="my-container">
+    <h1> The best cat in the world!</h1>
+    <img src="Jane.jpeg" height = "200" alt= "A picture of Jane the cat"/>
+    <p> This is Jane. Jane is the best cat in the world for many reasons. </p>
+    <ol>
+      <li> She is a little cuddle bug and will cuddle with you all night long. </li>
+      <li> She is very lazy and can entertain herself. </li>
+      <li> She has a cute, fluffy little face! </li>
+    </ol>
+
+
+    <span class="my-number">0</span>
+    <button class="my-button">Click here if you agree that Jane is the best!</button>
+  </div>
+
+
 
 </body>
+
+<script>
+  var theNumber = 0
+  var myButton = document.querySelector('.my-button')
+  var myNumber = document.querySelector('.my-number')
+  myNumber.innerHTML = theNumber
+  myButton.addEventListener('click',function() {
+    theNumber += 1
+    myNumber.innerHTML = theNumber
+
+  })
+
+
+</script>
 
 
 </html>
